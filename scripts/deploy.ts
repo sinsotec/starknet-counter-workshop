@@ -29,8 +29,7 @@ async function main() {
   const myCallData = new CallData(sierraCode.abi);
   const constructor = myCallData.compile("constructor", {
     initial_counter: 100,
-    address:
-      "0x05f7151ea24624e12dde7e1307f9048073196644aa54d74a9c579a257214b542",
+    address: "0x05f7151ea24624e12dde7e1307f9048073196644aa54d74a9c579a257214b542",
     initial_owner: process.env.DEPLOYER_ADDRESS ?? "",
   });
   const deployResponse = await account0.declareAndDeploy({
